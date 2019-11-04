@@ -16,49 +16,22 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Sentence Encrypter</title>
   </head>
-  <body>
-    <h1 class="text-center">Hello, world!</h1>
-
-    {% block translated %}
-
-    <table class="table table-dark">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for i in data_t %}
-        <tr>
-          <td>{{ i }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    {% endblock %}
-
-    <!-- {% block jibberish %}
-
-    <table class="table table-dark">
-    <thead class="thead-dark">
-            <tr>
-                <th scope="col">#</th>
-              <th scope="col">Second</th>
-        </tr>
-      </thead>
-      <tbody>
-          {% for i in data_j %}
-          <tr>
-              <td>{{ i[0] }}</td>
-              <td>{{ i[1] }}</td>
-          </tr>
-          {% endfor %}
-      </tbody> 
-     </table>   
-  {% endblock %}
- -->
+  <body class="text-center">
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Classified Sentences</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          </div>
+        </div>
+    {% for table in tables %}
+    <div class="container">
+        <h4 class="text-center">{{ titles[loop.index] }}</h3>
+        {{ table | safe }}
+        <hr>
+    </div>
+    {% endfor %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
