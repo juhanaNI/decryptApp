@@ -9,7 +9,7 @@ conda create --name app_venv
 conda activate app_venv
 ```
 2. Kloonaa repository
-3. Navigoi kloonattuun kansioon ja lataa tarvittavat python paketit:
+3. Navigoi kloonattuun kansioon ja asenna tarvittavat python paketit:
 ```
 pip install -r requirements.txt 
 ```
