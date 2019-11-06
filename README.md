@@ -1,4 +1,4 @@
-# decrypterApp
+# 
 
 
 ```
@@ -6,10 +6,10 @@ conda create --name app_venv
 conda activate app_venv
 ```
 
-# List of finnish words
+# Lista suomenkielisistä sanoista
 
-kotus-sanalista_v1.xml contains 94110 finnish words provided by Institute For Languages Of Finland (Kotimaisten kielten tutkimuskeskus, Kotus). List can be downloaded [downloaded](http://kaino.kotus.fi/sanat/nykysuomi/) from their website in XML format. 
+kotus-sanalista_v1.xml sisältää Kotimaisten kielten keskuksen (Kotus) koostaman ja julkaiseman listan nykysuomen sanalistan. Sanalistan laajuus on 94 110 sanatietuetta. Lista on [ladattavissa](http://kaino.kotus.fi/sanat/nykysuomi/) Kotimaisten kielten keskuksen sivustoilta.
 
-Wordlist is licensed under GNU LGPL (Lesser General Public License), EUPL v.1.1 (European Union Public Licence) and CC Attribution 3.0 Unported.
+Sanalista on julkaistu lisensseillä GNU LGPL (Lesser General Public License), EUPL v.1.1 (Euroopan unionin yleinen lisenssi) ja CC Nimeä 3.0 Muokkaamaton.
 
-List is used to identify Finnish words from sentences.
+Sovelluksessa listaa käytetään suomenkielisten sanojen tunnistamiseen

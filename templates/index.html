@@ -16,39 +16,35 @@
       crossorigin="anonymous"
     />
 
-    <title>Encrypter</title>
+    <title>Kääntäjä</title>
   </head>
-  <body>
-    <h1 class="text-center">Encrypt</h1>
+  <body class="text-center">
 
-    {% block content %}
-
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col" class="text-center">Original Massages</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for i in data['bullshits'] %}
-        <tr>
-          <td>{{ i["message"] }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    {% endblock %}
-
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="text-center">
-          <a class="btn btn-primary btn-lg" href="/SomeFunction" role="button"
-            >Link</a
-          >
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Kääntäjä</h1>
+            <p class="lead">Tämä sovellus purkaa Cesar salatut lauseet suomenkielelle. 
+              Alkuperäiset lauseet palautetaan luokiteltuina käännettävissä oleviin No Bullshit lauseisiin
+              ja kääntymättömiin Bullshit lauseisiin</p>
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class="text-center">
+                    <a class="btn btn-primary btn-lg" href="/SomeFunction" role="button"
+                      >Pura lauseet</a
+                    >
+                  </div>
+                </div>
+              </div>
+          
+          </div>
         </div>
-      </div>
+    {% for table in tables %}
+    <div class="container">
+        <h4 class="text-center">{{ titles[loop.index] }}</h3>
+        {{ table | safe }}
+        <hr>
     </div>
-
+    {% endfor %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
