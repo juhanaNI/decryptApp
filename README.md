@@ -12,4 +12,4 @@ kotus-sanalista_v1.xml contains 94110 finnish words provided by Institute For La
 
 Wordlist is licensed under GNU LGPL (Lesser General Public License), EUPL v.1.1 (European Union Public Licence) and CC Attribution 3.0 Unported.
 
-List is used to identify winnish words from sentences.
+List is used to identify Finnish words from sentences.
