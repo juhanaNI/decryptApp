@@ -1,10 +1,23 @@
 # 
+Web-käyttöliittymä, joka purkaa APIsta haettuja kryptattuja lauseita. Lauseet on kryptattu Caesar-salakirjoitusjärjestelmällä. Lauseet näytetään jaoteltuina No bullshit ja bullshit –lauseisiin. Käännettävissä olevat no bullshit –lauseet näytetään suomeksi ja bullshit-lauseet, jotka eivät käänny selkokielisiksi, näytetään alkuperäismuodossaan.
 
+# Ohjeet
 
+1. Halutessasi luo virtuaaliympäristö 
 ```
 conda create --name app_venv
 conda activate app_venv
 ```
+2. Kloonaa repository
+3. Navigoi kloonattuun kansioon ja lataa tarvittavat python paketit:
+```
+pip install -r requirements.txt 
+```
+4. Käynistä sovellus:
+```
+python app.py
+```
+5. Avaa http://127.0.0.1:5000/ selaimessa
 
 # Lista suomenkielisistä sanoista
 
